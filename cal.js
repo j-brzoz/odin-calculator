@@ -69,3 +69,8 @@ function clearFun(){
     firstNumber = null;
     wholeNumber = "";
 }
+
+function deleteFun(){
+    wholeNumber = wholeNumber.substring(0, wholeNumber.length - 1);
+    display.textContent = wholeNumber;
+}
