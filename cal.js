@@ -1,5 +1,5 @@
 function add(a, b){
-    return a + b;
+    return Math.round((a / b) * 10000) / 10000;
 }
 function multiply(a, b){
     return a * b;
@@ -8,7 +8,10 @@ function substract(a, b){
     return a - b;
 }
 function divide(a, b){
-    return a / b;
+    if(b != 0)
+        return Math.round((a / b) * 10000) / 10000;
+    else
+        return "IDK";
 }
 
 function operate(operator, a, b){
