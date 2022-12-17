@@ -4,34 +4,50 @@
         <meta charset="UTF-8">
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
         <script src="cal.js" defer></script>
     </head>
     <body>
-        <div id="display"></div>
-        <div>
-            <button id="clear">clear</button>
-            <button id="delete">delete</button>
+        <div class="header">
+            <p>Calculator</p>
         </div>
-        <div id="main buttons">
-            <button id="number">7</button>
-            <button id="number">8</button>
-            <button id="number">9</button>
-            <button id="operator">/</button>
-            <br>
-            <button id="number">4</button>
-            <button id="number">5</button>
-            <button id="number">6</button>
-            <button id="operator">*</button>
-            <br>
-            <button id="number">1</button>
-            <button id="number">2</button>
-            <button id="number">3</button>
-            <button id="operator">-</button>
-            <br>
-            <button id="number">0</button>
-            <button id="number">.</button>
-            <button id="equals">=</button>
-            <button id="operator">+</button>
+        <div class="main">
+            <div class="display" id="display"></div>
+            <div id="biggerButtons" class="biggerButtons">
+                <button id="clear" class="biggerButton">clear</button>
+                <button id="delete" class="biggerButton">delete</button>
+            </div>
+            <div id="main buttons">
+                <div class="row">
+                    <button id="number">7</button>
+                    <button id="number">8</button>
+                    <button id="number">9</button>
+                    <button id="operator">/</button>
+                </div>
+                <div class="row">
+                    <button id="number">4</button>
+                    <button id="number">5</button>
+                    <button id="number">6</button>
+                    <button id="operator">*</button>
+                </div>
+                <div class="row">
+                    <button id="number">1</button>
+                    <button id="number">2</button>
+                    <button id="number">3</button>
+                    <button id="operator">-</button>
+                </div>
+                <div class="row">
+                    <button id="number" style="margin-bottom: 0;">0</button>
+                    <button id="number" style="margin-bottom: 0;">.</button>
+                    <button id="equals" style="margin-bottom: 0;">=</button>
+                    <button id="operator" style="margin-bottom: 0;">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="warning">*only 8 digits numbers (  . is considered as a digit)</div>
+        <div class="footer">
+            <p>Project from The Odin Project course by Jan Brzozowski</p>
         </div>
     </body>
 </html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFBEB;
+    align-items: center;
+
+}
+
+.header {
+    background-color: #263159;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    padding: 8px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 420px;
+    height: 560px;
+    margin-top: 64px;
+    border-radius: 8px;
+    border: 4px solid #263159;
+    padding: 24px;
+}
+
+.display {
+    background-color: white;
+    width: 100%;
+    height: 96px;
+    border-radius: 4px;
+    padding: 18px;
+    border: 2px solid #263159;
+    color: #263159;
+    font-family: "Orbitron","Poppins", Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-size: 40px;
+}
+
+.biggerButtons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.biggerButton {
+    width: 178px;
+    margin-top: 18px;
+    background-color: #fb9682;
+}
+
+.biggerButton:hover {
+    background-color: #d98270;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+button {
+    width: 80px;
+    height: 65px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    border-radius: 4px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #263159;
+    border: 2px solid #263159;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+#operator, #equals{
+    background-color: #a1b9f9;
+}
+
+#operator:hover, #equals:hover{
+    background-color: #8ca1da;
+}
+
+.warning {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #263159;
+}
+
+.footer {
+    background-color: #495579;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 4px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+}
